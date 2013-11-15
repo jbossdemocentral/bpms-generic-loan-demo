@@ -1,6 +1,8 @@
 JBoss BPM Suite Generic Loan Demo
 =================================
 
+![Install Console](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/install-console.png?raw=true)
+
 ![Loan Process](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/generic-loan-process.png?raw=true)
 
 
