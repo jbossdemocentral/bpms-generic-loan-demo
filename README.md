@@ -44,6 +44,13 @@ Generic Loan demo known issues for Beta1
 ----------------------------------------
 None noted yet.
 
+
+Supporting Articles
+-------------------
+
+[Red Hat JBoss BPM Suite - Automated Lending with a Generic Loan Demo] (http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html)
+
+
 Released versions
 -----------------
 
