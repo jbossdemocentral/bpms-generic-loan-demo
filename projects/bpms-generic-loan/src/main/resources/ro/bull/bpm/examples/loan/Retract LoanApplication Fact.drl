@@ -1,0 +1,10 @@
+package ro.bull.bpm.examples.loan;
+
+rule "Retract LoanApplication"
+	ruleflow-group "eligibility"
+	salience 5
+	when
+		loanApp : LoanApplication()
+	then
+		retract(loanApp)
+end

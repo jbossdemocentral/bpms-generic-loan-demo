@@ -1,0 +1,135 @@
+
+<form id="1553346719">
+<property name="subject" value=""/>
+<property name="name" value="ro.bull.bpm.examples.loan.LoanApp-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="name" type="InputText" id="419623783">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;enquot;,quot;Applicantquot;quot;esquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="title" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="disabled" value="false"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="pattern" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="name"/>
+</field>
+<field position="1" name="age" type="InputTextInteger" id="1031730525">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;enquot;,quot;Agequot;quot;esquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="title" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="disabled" value="false"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="age"/>
+</field>
+<field position="3" name="income" type="InputTextFloat" id="129236876">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="height" value=""/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;enquot;,quot;Income (per month)quot;quot;esquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="title" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="disabled" value="false"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="pattern" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="income"/>
+</field>
+<field position="4" name="amount" type="InputTextFloat" id="513374587">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="height" value=""/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;enquot;,quot;Loan amountquot;quot;esquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="title" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="disabled" value="false"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="pattern" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="amount"/>
+</field>
+<field position="5" name="period" type="InputTextInteger" id="1307821386">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;enquot;,quot;Period (months)quot;quot;esquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="title" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="disabled" value="false"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value="6,12,24,36,48"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="period"/>
+</field>
+<field position="2" name="email" type="InputText" id="440703221">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;enquot;,quot;E-mailquot;quot;esquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="title" value="quot;enquot;,quot;quot;quot;esquot;,quot;quot;"/>
+<property name="disabled" value="false"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="pattern" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="email"/>
+</field>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="age" value="java.lang.Integer" id="age"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="amount" value="java.lang.Float" id="amount"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="email" value="java.lang.String" id="email"/>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="income" value="java.lang.Float" id="income"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="name" value="java.lang.String" id="name"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="period" value="java.lang.Integer" id="period"/>
+</form>
