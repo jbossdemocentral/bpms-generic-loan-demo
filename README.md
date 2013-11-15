@@ -1,7 +1,7 @@
 JBoss BPM Suite Generic Loan Demo
 =================================
 
-![Loan Process](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/generic-loan-process.png)
+![Loan Process](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/generic-loan-process.png?raw=true)
 
 
 Quickstart
