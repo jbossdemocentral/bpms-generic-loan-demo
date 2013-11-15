@@ -17,7 +17,7 @@ Quickstart
 
 4. Login to http://localhost:8080/business-central  (u:erics / p:bpmsuite)
 
-  - login for Loan Officer role (u:mary / p:bpmsuite)
+  - login for Loan Officer role (u:alan / p:bpmsuite)
 
 Note
 ----
