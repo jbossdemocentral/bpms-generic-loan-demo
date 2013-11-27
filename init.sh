@@ -10,9 +10,9 @@ SERVER_BIN=$JBOSS_HOME/bin
 SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
-EAP=jboss-eap-6.1.0.zip
-BPMS=jboss-bpms-6.0.0.Beta1-deployable-eap6.x.zip
-VERSION=6.0.0.Beta
+EAP=jboss-eap-6.1.1.zip
+BPMS=jboss-bpms-6.0.0-redhat-5-deployable-eap6.x.zip
+VERSION=6.0.0.ER5
 
 # wipe screen.
 clear 
