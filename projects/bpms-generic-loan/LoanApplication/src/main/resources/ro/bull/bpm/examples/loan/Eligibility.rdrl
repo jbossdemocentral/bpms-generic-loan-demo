@@ -1,0 +1,12 @@
+package ro.bull.bpm.examples.loan;
+
+rule "Eligibility"
+	dialect "mvel"
+	ruleflow-group "eligibility"
+	salience 10
+	when
+		loanApp : LoanApplication( rate < ( loanApp.income / 3.0 ) , age >= 18 )
+	then
+		insert( new Eligible() );
+		System.out.println("Eligibility rule: Applicant is eligible");
+end
