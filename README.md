@@ -40,8 +40,16 @@ The following values can be used (in process form) for testing:
 Note that the entire demo is running default in memory, restart server, lose your process instances, data, monitoring history.
 
 
-Generic Loan demo known issues for Beta1
-----------------------------------------
+Generic Loan demo known issues
+------------------------------
+ER5:
+
+- Tools -> Project Editor opening project gives errors in log and pop up error.
+- project build and deploy fails.
+
+
+Beta1:
+
 None noted yet.
 
 
