@@ -42,14 +42,6 @@ Note that the entire demo is running default in memory, restart server, lose you
 
 Generic Loan demo known issues
 ------------------------------
-ER5:
-
-- Tools -> Project Editor opening project gives errors in log and pop up error.
-- project build and deploy fails.
-
-
-Beta1:
-
 None noted yet.
 
 
