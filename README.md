@@ -42,7 +42,8 @@ Note that the entire demo is running default in memory, restart server, lose you
 
 Generic Loan demo known issues
 ------------------------------
-None noted yet.
+
+- broken startup with Beta version with demo project pre-loaded, so NOT installing demo into server currently.
 
 
 Supporting Articles
