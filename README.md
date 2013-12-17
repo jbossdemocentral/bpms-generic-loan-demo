@@ -56,6 +56,6 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
-- v0.2 - JBoss BPM Suite 6.0.0.ER5, JBoss EAP 6.0, and generic loan demo installed.
+- v0.2 - JBoss BPM Suite 6.0.0.Beta, JBoss EAP 6.1.1, and generic loan demo installed.
 
-- v0.1 - JBoss BPM Suite 6.0.0.Beta1, JBoss EAP 6.0, and generic loan demo installed.
+- v0.1 - JBoss BPM Suite 6.0.0.Beta1, JBoss EAP 6.1.1, and generic loan demo installed.
