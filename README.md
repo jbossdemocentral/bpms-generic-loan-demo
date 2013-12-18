@@ -44,10 +44,13 @@ Generic Loan demo known issues
 ------------------------------
 
 1)
+
 Demo works as documented, but there are many errors you will see in the server logs. You can ignore, but added here below for your
 information.
 
+
 2)
+
 Log error messages if you have exisiting build artifact from project in your local maven repository on start up of product, looks
 like this for me:
 
@@ -61,7 +64,9 @@ added:ZipKieModule[ReleaseId=ro.bull.bpm.examples:loan:1.0file=/Users/erics/demo
 
 12:55:01,055 ERROR [stderr] (Thread-89) 	at org.uberfire.metadata.io.BatchIndex$1.run(BatchIndex.java:57)
 
+
 3)
+
 Login to product produces these errors in the server log, seems to work even though errors shown:
 
 12:57:42,411 ERROR [org.uberfire.backend.server.config.DefaultPasswordServiceImpl] (http-localhost/127.0.0.1:8080-1) Unable to
