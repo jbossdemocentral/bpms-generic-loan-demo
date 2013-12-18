@@ -12,7 +12,7 @@ SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
 EAP=jboss-eap-6.1.1.zip
 BPMS=jboss-bpms-6.0.0-redhat-5-deployable-eap6.x.zip
-VERSION=6.0.0.ER1
+VERSION=6.0.0.ER5
 
 # wipe screen.
 clear 
