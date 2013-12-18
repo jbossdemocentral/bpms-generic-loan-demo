@@ -43,7 +43,31 @@ Note that the entire demo is running default in memory, restart server, lose you
 Generic Loan demo known issues
 ------------------------------
 
+1)
 Demo broken on startup with Beta version with demo project pre-loaded, so NOT installing demo into server currently.
+
+2)
+Log error messages if you have exisiting build artifact from project in your local maven repository on start up of product, looks
+like this for me:
+
+12:54:55,211 INFO  [org.guvnor.m2repo.backend.server.GuvnorM2Repository] (MSC service thread 1-1) Maven Repository root set to:
+/Users/erics/demo-projects/bpms6/bpms-generic-loan-demo/target/jboss-eap-6.1/bin
+
+12:54:59,353 INFO  [org.drools.compiler.kie.builder.impl.KieRepositoryImpl] (MSC service thread 1-1) KieModule was
+added:ZipKieModule[ReleaseId=ro.bull.bpm.examples:loan:1.0file=/Users/erics/demo-projects/maven-repository/ro/bull/bpm/examples/loan/1.0/loan-1.0.jar]
+
+12:55:01,054 ERROR [stderr] (Thread-89) Exception in thread "Thread-89" java.lang.NullPointerException
+
+12:55:01,055 ERROR [stderr] (Thread-89) 	at org.uberfire.metadata.io.BatchIndex$1.run(BatchIndex.java:57)
+
+3)
+Login to product produces these errors in the server log, seems to work even though errors shown:
+
+12:57:42,411 ERROR [org.uberfire.backend.server.config.DefaultPasswordServiceImpl] (http-localhost/127.0.0.1:8080-1) Unable to
+decrypt: org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.jasypt.encryption.pbe.StandardPBEByteEncryptor.decrypt(StandardPBEByteEncryptor.java:981) [jasypt-1.9.0.jar:]
+	at org.jasypt.encryption.pbe.StandardPBEStringEncryptor.decrypt(StandardPBEStringEncryptor.java:725) [jasypt-1.9.0.jar:]
+	at org.uberfire.backend.server.config.DefaultPasswordServiceImpl.decrypt(DefaultPasswordServiceImpl.java:42)
 
 
 Supporting Articles
@@ -57,6 +81,6 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
-- v0.2 - JBoss BPM Suite 6.0.0.Beta, JBoss EAP 6.1.1, and generic loan demo installed.
+- v0.2 - JBoss BPM Suite 6.0.0.ER5, JBoss EAP 6.1.1, and generic loan demo installed.
 
 - v0.1 - JBoss BPM Suite 6.0.0.Beta1, JBoss EAP 6.1.1, and generic loan demo installed.

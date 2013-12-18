@@ -11,8 +11,8 @@ SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
 EAP=jboss-eap-6.1.1.zip
-BPMS=jboss-bpms-6.0.0.Beta-redhat-5-deployable-eap6.x.zip
-VERSION=6.0.0.Beta
+BPMS=jboss-bpms-6.0.0-redhat-5-deployable-eap6.x.zip
+VERSION=6.0.0.ER1
 
 # wipe screen.
 clear 
@@ -89,9 +89,9 @@ echo "  - enabling demo accounts role setup in application-roles.properties file
 echo
 cp $SUPPORT_DIR/application-roles.properties $SERVER_CONF
 
-#echo "  - setting up demo projects..."
-#echo
-#cp -r $SUPPORT_DIR/bpm-suite-demo-niogit $SERVER_BIN/.niogit
+echo "  - setting up demo projects..."
+echo
+cp -r $SUPPORT_DIR/bpm-suite-demo-niogit $SERVER_BIN/.niogit
 
 echo "  - setting up standalone.xml configuration adjustments..."
 echo
