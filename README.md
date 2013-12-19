@@ -19,6 +19,10 @@ Quickstart
 
   - login for Loan Officer role (u:alan / p:bpmsuite)
 
+5. Generic Loan demo pre-installed as project.
+
+6. Process and Task dashboard pre-filled with mock data. 
+
 Note
 ----
 
@@ -86,6 +90,8 @@ Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v0.4 - JBoss BPM Suite 6.0.0.Beta, JBoss EAP 6.1.1, mock data populated in Process and Task dashboard, and generic loan demo installed.
 
 - v0.3 - JBoss BPM Suite 6.0.0.Beta, JBoss EAP 6.1.1, and generic loan demo installed.
 
