@@ -104,11 +104,18 @@ echo.
 xcopy /Y /Q "%SUPPORT_DIR%\application-roles.properties" "%SERVER_CONF%"
 echo. 
 
+echo - enabling management accounts logins in mgmt-users.properties file...
+echo.
+xcopy /Y /Q "%SUPPORT_DIR%\mgmt-users.properties" "%SERVER_CONF%"
+echo. 
+
 echo - setting up demo projects...
 echo.
 
 mkdir "%SERVER_BIN%\.niogit\"
 xcopy /Y /Q /S "%SUPPORT_DIR%\bpm-suite-demo-niogit\*" "%SERVER_BIN%\.niogit\"
+mkdir "%SERVER_BIN%\.index\"
+xcopy /Y /Q /S "%SUPPORT_DIR%\bpm-suite-demo-index\*" "%SERVER_BIN%\.index\"
 echo. 
 
 echo - setting up mock bpm dashboard data...
