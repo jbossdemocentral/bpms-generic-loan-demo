@@ -3,7 +3,7 @@ setlocal
 
 set PROJECT_HOME=%~dp0
 set DEMO=Generic Loan Demo
-set AUTHORS=Dan-Grigore Pupaz, Eric D. Schabell
+set AUTHORS=Dan-Grigore Pupaz, Alexandre Porcelli, Eric D. Schabell
 set PROJECT=git@github.com:eschabell/bpms-generic-loan-demo.git
 set PRODUCT=JBoss BPM Suite
 set JBOSS_HOME=%PROJECT_HOME%\target\jboss-eap-6.1
@@ -34,7 +34,7 @@ echo ##     ####  #     #     #    ###  ##### #####   #   #####     ##
 echo ##                                                             ##   
 echo ##                                                             ##   
 echo ##  brought to you by,                                         ##   
-echo ##             %AUTHORS%             ##
+echo ##   ${AUTHORS}  ##
 echo ##                                                             ##   
 echo ##  %PROJECT%         ##
 echo ##                                                             ##   

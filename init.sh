@@ -1,6 +1,6 @@
 #!/bin/sh 
 DEMO="Generic Loan Demo"
-AUTHORS="Dan-Grigore Pupaza, Eric D. Schabell"
+AUTHORS="Dan-Grigore Pupaza, Alexandre Porcelli, Eric D. Schabell"
 PROJECT="git@github.com:eschabell/bpms-generic-loan-demo.git"
 PRODUCT="JBoss BPM Suite"
 JBOSS_HOME=./target/jboss-eap-6.1
@@ -31,12 +31,13 @@ echo "##     ####  #     #     #    ###  ##### #####   #   #####     ##"
 echo "##                                                             ##"   
 echo "##                                                             ##"   
 echo "##  brought to you by,                                         ##"   
-echo "##             ${AUTHORS}            ##"
+echo "##   ${AUTHORS}  ##"
 echo "##                                                             ##"   
 echo "##  ${PROJECT}        ##"
 echo "##                                                             ##"   
 echo "#################################################################"
 echo
+exit
 
 command -v mvn -q >/dev/null 2>&1 || { echo >&2 "Maven is required but not installed yet... aborting."; exit 1; }
 
