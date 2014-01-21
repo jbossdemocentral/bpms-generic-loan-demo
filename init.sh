@@ -11,8 +11,8 @@ SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
 EAP=jboss-eap-6.1.1.zip
-BPMS=jboss-bpms-6.0.0-redhat-7-deployable-eap6.x.zip
-VERSION=6.0.0.ER7
+BPMS=jboss-bpms-6.0.0.GA-redhat-1-deployable-eap6.x.zip
+VERSION=6.0.0.CR1
 
 # wipe screen.
 clear 
@@ -106,10 +106,13 @@ echo "  - setting up standalone.xml configuration adjustments..."
 echo
 cp $SUPPORT_DIR/standalone.xml $SERVER_CONF
 
-# Add execute permissions to the standalone.sh script.
 echo "  - making sure standalone.sh for server is executable..."
 echo
 chmod u+x $JBOSS_HOME/bin/standalone.sh
+
+echo "  - turn off security profile for performance in standalone.conf..."
+echo
+sed -i '' 's/JAVA_OPTS="$JAVA_OPTS -Djava.security.manager/#JAVA_OPTS="$JAVA_OPTS -Djava.security.manager/g' $JBOSS_HOME/bin/standalone.conf
 
 echo "You can now start the $PRODUCT with $SERVER_BIN/standalone.sh"
 echo
