@@ -106,10 +106,13 @@ echo "  - setting up standalone.xml configuration adjustments..."
 echo
 cp $SUPPORT_DIR/standalone.xml $SERVER_CONF
 
-# Add execute permissions to the standalone.sh script.
 echo "  - making sure standalone.sh for server is executable..."
 echo
 chmod u+x $JBOSS_HOME/bin/standalone.sh
+
+echo "  - turn off security profile for performance in standalone.conf..."
+echo
+sed -i '' 's/JAVA_OPTS="$JAVA_OPTS -Djava.security.manager/#JAVA_OPTS="$JAVA_OPTS -Djava.security.manager/g' $JBOSS_HOME/bin/standalone.conf
 
 echo "You can now start the $PRODUCT with $SERVER_BIN/standalone.sh"
 echo

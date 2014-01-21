@@ -123,6 +123,12 @@ echo.
 xcopy /Y /Q "%SUPPORT_DIR%\1000_jbpm_demo_h2.sql" "%SERVER_DIR%\dashbuilder.war\WEB-INF\etc\sql"
 echo. 
 
+echo - turn off security profile for performance in standalone.conf... 
+echo.
+xcopy /Y /Q "%SUPPORT_DIR%\standalone.conf" "%SERVER_BIN%\standalone.conf"
+echo.
+
+
 echo - setting up standalone.xml configuration adjustments...
 echo.
 xcopy /Y /Q "%SUPPORT_DIR%\standalone.xml" "%SERVER_CONF%"
