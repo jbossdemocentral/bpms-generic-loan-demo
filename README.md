@@ -44,9 +44,8 @@ Note that the entire demo is running default in memory, restart server, lose you
 Generic Loan demo known issues
 ------------------------------
 
-1)
+None at this time.
 
-Simulation run with a small number of instances (less than 20) will work, but the graphs in the reports are not displayed.
 
 Supporting Articles
 -------------------
