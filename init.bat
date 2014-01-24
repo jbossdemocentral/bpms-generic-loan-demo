@@ -118,10 +118,14 @@ mkdir "%SERVER_BIN%\.index\"
 xcopy /Y /Q /S "%SUPPORT_DIR%\bpm-suite-demo-index\*" "%SERVER_BIN%\.index\"
 echo. 
 
-echo - setting up mock bpm dashboard data...
-echo.
-xcopy /Y /Q "%SUPPORT_DIR%\1000_jbpm_demo_h2.sql" "%SERVER_DIR%\dashbuilder.war\WEB-INF\etc\sql"
-echo. 
+REM Optional: uncomment this to install mock data for BPM Suite, providing 
+REM           colorful BAM history charts and filled Process & Task dashboard 
+REM           views.
+REM
+REM echo - setting up mock bpm dashboard data...
+REM echo.
+REM xcopy /Y /Q "%SUPPORT_DIR%\1000_jbpm_demo_h2.sql" "%SERVER_DIR%\dashbuilder.war\WEB-INF\etc\sql"
+REM echo. 
 
 echo - turn off security profile for performance in standalone.conf... 
 echo.
@@ -137,6 +141,17 @@ echo.
 echo.
 echo You can now start the %PRODUCT% with %SERVER_BIN%\standalone.bat
 echo.
+
+echo PRE-LOAD DEMO
+echo =============
+echo To load the BPM with a set of process instances, you can run the following
+echo command after you start JBoss BPM Suite, build and deploy the mortgage
+echo project, then you can use the helper jar file found in the support directory
+echo as follows:
+echo. 
+echo    java -jar jboss-generic-loan-demo-client.jar erics bpmsuite
+echo.
+
 
 echo %PRODUCT% %VERSION% %DEMO% Setup Complete.
 echo.

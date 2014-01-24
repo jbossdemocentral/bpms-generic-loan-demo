@@ -17,7 +17,7 @@ Quickstart
 
 5. Generic Loan demo pre-installed as project.
 
-6. Process and Task dashboard pre-filled with mock data. 
+6. Process and Task dashboard pre-filled with mock data optional now, to add just uncomment install scripts (see inline script comments). 
 
 
 Note
@@ -29,7 +29,7 @@ The demo covers the following aspects:
  - Rules definition (DLR format)
  - Forms definition (for both process, to collect the input parameters, and user task)
  - Data models (using Date Modeler)
-
+ - Helper jar to pre-load with five process instances in various states.
 
 The following values can be used (in process form) for testing:
  - Applicant: Your Name
