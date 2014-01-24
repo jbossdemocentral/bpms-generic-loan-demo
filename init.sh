@@ -11,8 +11,8 @@ SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
 EAP=jboss-eap-6.1.1.zip
-BPMS=jboss-bpms-6.0.0.GA-redhat-1-deployable-eap6.x.zip
-VERSION=6.0.0.CR1
+BPMS=jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip
+VERSION=6.0.0.CR2
 
 # wipe screen.
 clear 
@@ -114,9 +114,9 @@ echo "  - making sure standalone.sh for server is executable..."
 echo
 chmod u+x $JBOSS_HOME/bin/standalone.sh
 
-echo "  - turn off security profile for performance in standalone.conf..."
+echo "  - temp CR1 fix for persisitence bug: https://bugzilla.redhat.com/show_bug.cgi?id=1055122 ..."
 echo
-sed -i '' 's/JAVA_OPTS="$JAVA_OPTS -Djava.security.manager/#JAVA_OPTS="$JAVA_OPTS -Djava.security.manager/g' $JBOSS_HOME/bin/standalone.conf
+cp -r $SUPPORT_DIR/persistence.xml $SERVER_DIR/business-central.war/WEB-INF/classes/META-INF/persistence.xml
 
 echo "You can now start the $PRODUCT with $SERVER_BIN/standalone.sh"
 echo
