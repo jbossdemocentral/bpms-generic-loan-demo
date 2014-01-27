@@ -17,7 +17,7 @@ Quickstart
 
 5. Generic Loan demo pre-installed as project.
 
-6. Process and Task dashboard pre-filled with mock data optional now, to add just uncomment install scripts (see inline script comments). 
+6. Process and Task dashboard pre-filled with mock data optional now. For Windows intaller, to add just uncomment install scripts (see inline script comments).
 
 
 Note
