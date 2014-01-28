@@ -11,13 +11,15 @@ Quickstart
 
 3. Run 'init.sh' or 'init.bat' file.
 
-4. Login to http://localhost:8080/business-central  (u:erics / p:bpmsuite)
+4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory.
+
+5. Login to http://localhost:8080/business-central  (u:erics / p:bpmsuite)
 
   - login for Loan Officer role (u:alan / p:bpmsuite)
 
-5. Generic Loan demo pre-installed as project.
+6. Generic Loan demo pre-installed as project.
 
-6. Process and Task dashboard pre-filled with mock data optional now. For Windows intaller, to add just uncomment install scripts (see inline script comments).
+7. Process and Task dashboard pre-filled with mock data optional now. For Windows intaller, to add just uncomment install scripts (see inline script comments).
 
 
 Note
@@ -57,6 +59,8 @@ Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v1.0 - JBoss BPM Suite 6.0.0.GA, JBoss EAP 6.1.1, and generic loan demo installed.
 
 - v0.7 - JBoss BPM Suite 6.0.0.CR2, JBoss EAP 6.1.1, and generic loan demo installed.
 

@@ -15,7 +15,7 @@ set SUPPORT_DIR=%PROJECT_HOME%\support
 set PRJ_DIR=%PROJECT_HOME%\projects\bpms-generic-loan
 set EAP=jboss-eap-6.1.1.zip
 set BPMS=jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip
-set VERSION=6.0.0.CR2
+set VERSION=6.0.0.GA
 
 REM wipe screen.
 cls

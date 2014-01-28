@@ -12,7 +12,7 @@ SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
 EAP=jboss-eap-6.1.1.zip
 BPMS=jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip
-VERSION=6.0.0.CR2
+VERSION=6.0.0.GA
 
 # wipe screen.
 clear 
@@ -105,10 +105,6 @@ cp $SUPPORT_DIR/standalone.xml $SERVER_CONF
 echo "  - making sure standalone.sh for server is executable..."
 echo
 chmod u+x $JBOSS_HOME/bin/standalone.sh
-
-echo "  - fix for persisitence bug: https://bugzilla.redhat.com/show_bug.cgi?id=1055122 ..."
-echo
-cp -r $SUPPORT_DIR/persistence.xml $SERVER_DIR/business-central.war/WEB-INF/classes/META-INF/persistence.xml
 
 echo "OPTIONAL:"
 echo "========="
