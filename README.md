@@ -13,9 +13,13 @@ Quickstart
 
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory.
 
-5. Login to http://localhost:8080/business-central  (u:erics / p:bpmsuite)
+5. Login to http://localhost:8080/business-central
+
+```
+  - login for admin role  (u:erics / p:bpmsuite)
 
   - login for Loan Officer role (u:alan / p:bpmsuite)
+```
 
 6. Generic Loan demo pre-installed as project.
 
@@ -27,7 +31,9 @@ rejected path, some will be waiting for you in the Loan Officer human task when 
    
 requests just run the client jar from a command line shell. You can run the following command from the 'support' directory:
 
+```
      java -jar jboss-generic-loan-demo-client.jar erics bpmsuite
+```
 
 Note
 ----
