@@ -21,6 +21,13 @@ Quickstart
 
 7. Process and Task dashboard pre-filled with mock data optional now. For Windows intaller, to add just uncomment install scripts (see inline script comments).
 
+8. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
+	 
+rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
+   
+requests just run the client jar from a command line shell. You can run the following command from the 'support' directory:
+
+     java -jar jboss-generic-loan-demo-client.jar erics bpmsuite
 
 Note
 ----
@@ -37,7 +44,7 @@ The following values can be used (in process form) for testing:
  - Applicant: Your Name
  - Age: 21
  - Income: 2000
- - Amount: 10010    (auto approval if value under 10k)
+ - Amount: 10010    (auto rejected if value under 10k)
  - Period (in months): 24
 
 Note that the entire demo is running default in memory, restart server, lose your process instances, data, monitoring history.
