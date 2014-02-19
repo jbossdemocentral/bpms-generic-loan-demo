@@ -23,7 +23,7 @@ Quickstart
 
 6. Generic Loan demo pre-installed as project.
 
-7. Process and Task dashboard pre-filled with mock data optional now. For Windows intaller, to add just uncomment install scripts (see inline script comments).
+7. Process and Task dashboard pre-filled with mock data optional now. 
 
 8. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
 rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
@@ -54,12 +54,6 @@ The following values can be used (in process form) for testing:
 Note that the entire demo is running default in memory, restart server, lose your process instances, data, monitoring history.
 
 
-Generic Loan demo known issues
-------------------------------
-
-None at this time.
-
-
 Supporting Articles
 -------------------
 
@@ -70,6 +64,8 @@ Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v1.1 - JBoss BPM Suite 6.0.0.GA, JBoss EAP 6.1.1, generic loan demo installed, mock data question removed.
 
 - v1.0 - JBoss BPM Suite 6.0.0.GA, JBoss EAP 6.1.1, and generic loan demo installed.
 
