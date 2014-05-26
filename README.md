@@ -96,3 +96,7 @@ See the tagged releases for the following versions of the product:
 
 ![Process & Task Dashboard](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/mock-bpm-data.png?raw=true)
 
+![Digital Sign bpmPaaS](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/bpmpaas-sign.png?raw=true)
+
+![Digital Sign Annoucement](https://github.com/eschabell/bpms-generic-load-demo/blob/master/docs/demo-images/announce-sign.png?raw=true)
+
