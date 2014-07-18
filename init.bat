@@ -114,8 +114,6 @@ echo.
 
 mkdir "%SERVER_BIN%\.niogit\"
 xcopy /Y /Q /S "%SUPPORT_DIR%\bpm-suite-demo-niogit\*" "%SERVER_BIN%\.niogit\"
-mkdir "%SERVER_BIN%\.index\"
-xcopy /Y /Q /S "%SUPPORT_DIR%\bpm-suite-demo-index\*" "%SERVER_BIN%\.index\"
 echo. 
 
 REM Optional: uncomment this to install mock data for BPM Suite, providing 
