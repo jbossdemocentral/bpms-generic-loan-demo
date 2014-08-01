@@ -26,7 +26,7 @@ rejected path, some will be waiting for you in the Loan Officer human task when 
 requests just run the client jar from a command line shell. You can run the following command from the 'support' directory:
 
 ```
-     java -jar jboss-generic-loan-demo-client.jar erics bpmsuite
+     java -jar jboss-generic-loan-demo-client.jar erics bpmsuite1!
 ```
 
 Note
