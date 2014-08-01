@@ -5,7 +5,7 @@ JBoss BPM Suite Generic Loan Demo
 Quickstart
 ----------
 
-1. Clone project.
+1. [Download and unzip.](https://github.com/eschabell/bpms-generic-loan-demo/archive/master.zip)
 
 2. Add products to installs directory.
 
@@ -16,16 +16,12 @@ Quickstart
 5. Login to http://localhost:8080/business-central
 
 ```
-  - login for admin role  (u:erics / p:bpmsuite)
-
-  - login for Loan Officer role (u:alan / p:bpmsuite)
+  - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
 ```
 
 6. Generic Loan demo pre-installed as project.
 
-7. Process and Task dashboard pre-filled with mock data optional now. 
-
-8. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
+7. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
 rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
 requests just run the client jar from a command line shell. You can run the following command from the 'support' directory:
 
@@ -68,6 +64,8 @@ Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v1.5 - JBoss BPM Suite 6.0.2 installer used, with generic loan demo installed.
 
 - v1.4 - JBoss BPM Suite 6.0.2, JBoss EAP 6.1.1, generic loan demo installed.
 
