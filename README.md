@@ -49,6 +49,8 @@ The following values can be used (in process form) for testing:
 
 Note that the entire demo is running default in memory, restart server, lose your process instances, data, monitoring history.
 
+Source for demo client available in projects directory.
+
 
 Supporting Articles
 -------------------
@@ -64,6 +66,8 @@ Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v1.6 - JBoss BPM Suite 6.0.2 installer used, with generic loan demo installed and demo client sources added.
 
 - v1.5 - JBoss BPM Suite 6.0.2 installer used, with generic loan demo installed.
 
