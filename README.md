@@ -67,6 +67,8 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
+- v1.7 - JBoss BPM Suite 6.0.3 installer with generic loan demo installed.
+
 - v1.6 - JBoss BPM Suite 6.0.2 installer used, with generic loan demo installed and demo client sources added.
 
 - v1.5 - JBoss BPM Suite 6.0.2 installer used, with generic loan demo installed.
