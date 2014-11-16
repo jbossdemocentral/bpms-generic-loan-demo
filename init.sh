@@ -3,15 +3,15 @@ DEMO="Generic Loan Demo"
 AUTHORS="Dan-Grigore Pupaza, Alexandre Porcelli, Eric D. Schabell"
 PROJECT="git@github.com:eschabell/bpms-generic-loan-demo.git"
 PRODUCT="JBoss BPM Suite"
-JBOSS_HOME=./target/jboss-eap-6.1
+JBOSS_HOME=./target/jboss-eap-6.3
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
 SERVER_CONF=$JBOSS_HOME/standalone/configuration/
 SERVER_BIN=$JBOSS_HOME/bin
 SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
-BPMS=jboss-bpms-installer-6.0.3.GA-redhat-1.jar
-VERSION=6.0.3
+BPMS=jboss-bpmsuite-installer-6.1.0.ER2.jar
+VERSION=6.1.ER
 
 # wipe screen.
 clear 
