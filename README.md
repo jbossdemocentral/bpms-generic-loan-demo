@@ -5,7 +5,7 @@ JBoss BPM Suite Generic Loan Demo
 Quickstart
 ----------
 
-1. [Download and unzip.](https://github.com/eschabell/bpms-generic-loan-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-generic-loan-demo/archive/master.zip)
 
 2. Add products to installs directory.
 
@@ -67,6 +67,8 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
+- v1.7 - moved to JBoss Demo Central.
+
 - v1.7 - JBoss BPM Suite 6.0.3 installer with generic loan demo installed.
 
 - v1.6 - JBoss BPM Suite 6.0.2 installer used, with generic loan demo installed and demo client sources added.
@@ -98,11 +100,11 @@ See the tagged releases for the following versions of the product:
 - v0.1 - JBoss BPM Suite 6.0.0.Beta1, JBoss EAP 6.1.1, and generic loan demo installed.
 
 
-![Loan Process](https://github.com/eschabell/bpms-generic-loan-demo/blob/master/docs/demo-images/generic-loan-process.png?raw=true)
+![Loan Process](https://github.com/jbossdemocentral/bpms-generic-loan-demo/blob/master/docs/demo-images/generic-loan-process.png?raw=true)
 
-![Process & Task Dashboard](https://github.com/eschabell/bpms-generic-loan-demo/blob/master/docs/demo-images/mock-bpm-data.png?raw=true)
+![Process & Task Dashboard](https://github.com/jbossdemocentral/bpms-generic-loan-demo/blob/master/docs/demo-images/mock-bpm-data.png?raw=true)
 
-![Digital Sign bpmPaaS](https://github.com/eschabell/bpms-generic-loan-demo/blob/master/docs/demo-images/bpmpaas-sign.png?raw=true)
+![Digital Sign bpmPaaS](https://github.com/jbossdemocentral/bpms-generic-loan-demo/blob/master/docs/demo-images/bpmpaas-sign.png?raw=true)
 
-![Digital Sign Annoucement](https://github.com/eschabell/bpms-generic-loan-demo/blob/master/docs/demo-images/announce-sign.png?raw=true)
+![Digital Sign Annoucement](https://github.com/jbossdemocentral/bpms-generic-loan-demo/blob/master/docs/demo-images/announce-sign.png?raw=true)
 

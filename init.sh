@@ -1,7 +1,7 @@
 #!/bin/sh 
 DEMO="Generic Loan Demo"
 AUTHORS="Dan-Grigore Pupaza, Alexandre Porcelli, Eric D. Schabell"
-PROJECT="git@github.com:eschabell/bpms-generic-loan-demo.git"
+PROJECT="git@github.com:jbossdemocentral/bpms-generic-loan-demo.git"
 PRODUCT="JBoss BPM Suite"
 JBOSS_HOME=./target/jboss-eap-6.1
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
@@ -32,7 +32,7 @@ echo "##                                                             ##"
 echo "##  brought to you by,                                         ##"   
 echo "##   ${AUTHORS}  ##"
 echo "##                                                             ##"   
-echo "##  ${PROJECT}        ##"
+echo "##  ${PROJECT} ##"
 echo "##                                                             ##"   
 echo "#################################################################"
 echo

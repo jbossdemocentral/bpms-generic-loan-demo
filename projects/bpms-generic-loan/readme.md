@@ -17,7 +17,7 @@ Before starting the installation add the loanOfficer role to the user which is u
 5. Fill the Clone Repository form:
   - Repository Name - the name of the repository (created inside JBoss BPM Suite)
   - Organizational Unit - select a value from list
-  - Git URL - https://github.com/eschabell/bpms-loan-demo.git
+  - Git URL - https://github.com/jbossdemocentral/bpms-loan-demo.git
   - Leave User Name and Password fields empty
 
 Note: The application assets are defined into the ro.bull.bpm.examples.loan package.
