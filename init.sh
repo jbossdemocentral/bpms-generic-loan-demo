@@ -40,7 +40,7 @@ echo
 command -v mvn -q >/dev/null 2>&1 || { echo >&2 "Maven is required but not installed yet... aborting."; exit 1; }
 
 # make some checks first before proceeding.	
-if [[ -r $SRC_DIR/$BPMS || -L $SRC_DIR/$BPMS ]]; then
+if [ -r $SRC_DIR/$BPMS ] || [ -L $SRC_DIR/$BPMS ]; then
 		echo Product sources are present...
 		echo
 else
@@ -50,14 +50,13 @@ else
 		exit
 fi
 
-# Move the old JBoss instance, if it exists, to the OLD position.
+# Remove the old JBoss instance, if it exists.
 if [ -x $JBOSS_HOME ]; then
 		echo "  - existing JBoss product install detected..."
 		echo
-		echo "  - moving existing JBoss install moved aside..."
+		echo "  - remove existing JBoss install..."
 		echo
-		rm -rf $JBOSS_HOME.OLD
-		mv $JBOSS_HOME $JBOSS_HOME.OLD
+		rm -rf $JBOSS_HOME
 fi
 
 # Run installer.

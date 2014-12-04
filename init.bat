@@ -51,18 +51,13 @@ if exist %SRC_DIR%\%BPMS% (
         GOTO :EOF
 )
 
-REM Move the old JBoss instance, if it exists, to the OLD position.
+REM Move the old JBoss instance, if it exists.
 if exist %JBOSS_HOME% (
          echo - existing JBoss product install detected...
          echo.
-         echo - moving existing JBoss product install moved aside...
+         echo - remove existing JBoss product install...
          echo.
-        
-        if exist "%JBOSS_HOME%.OLD" (
-                rmdir /s /q "%JBOSS_HOME%.OLD"
-        )
-        
-         move "%JBOSS_HOME%" "%JBOSS_HOME%.OLD"
+         rmdir /s /q "%JBOSS_HOME%"
  )
 
 REM Run installer.
