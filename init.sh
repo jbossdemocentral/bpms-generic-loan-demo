@@ -3,6 +3,7 @@ DEMO="Generic Loan Demo"
 AUTHORS="Dan-Grigore Pupaza, Alexandre Porcelli, Eric D. Schabell"
 PROJECT="git@github.com:jbossdemocentral/bpms-generic-loan-demo.git"
 PRODUCT="JBoss BPM Suite"
+TARGET_DIR=./target
 JBOSS_HOME=./target/jboss-eap-6.1
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
 SERVER_CONF=$JBOSS_HOME/standalone/configuration/
@@ -57,12 +58,19 @@ if [ -x $JBOSS_HOME ]; then
 		echo "  - remove existing JBoss install..."
 		echo
 		rm -rf $JBOSS_HOME
+		rm -rf ${TARGET_DIR}/client
+		rm -f ${TARGET_DIR}/server.keystore.jks
 fi
 
 # Run installer.
 echo Product installer running now...
 echo
 java -jar $SRC_DIR/$BPMS $SUPPORT_DIR/installation-bpms -variablefile $SUPPORT_DIR/installation-bpms.variables
+
+if [ $? -ne 0 ]; then
+	echo Error occurred during JBoss installation
+	exit
+fi
 
 echo "  - enabling demo accounts role setup in application-roles.properties file..."
 echo
