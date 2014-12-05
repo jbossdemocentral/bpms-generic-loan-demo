@@ -9,7 +9,7 @@ Quickstart
 
 2. Add products to installs directory.
 
-3. Run 'init.sh' or 'init.bat' file.
+3. Run 'init.sh' or 'init.bat' file. When running init.bat, be sure to run the script as an Administrator
 
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory.
 
