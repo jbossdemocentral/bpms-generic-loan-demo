@@ -90,7 +90,7 @@ chmod u+x $JBOSS_HOME/bin/standalone.sh
 
 # Optional: uncomment this to install mock data for BPM Suite.
 #
-#echo - setting up mock bpm dashboard data...
+#echo "  - setting up mock bpm dashboard data..."
 #cp $SUPPORT_DIR/1000_jbpm_demo_h2.sql $SERVER_DIR/dashbuilder.war/WEB-INF/etc/sql
 #echo
 
