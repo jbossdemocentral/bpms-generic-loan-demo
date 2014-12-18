@@ -10,6 +10,12 @@ After clicking button, ensure `Gear` size is set to `medium`:
 
 [![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to  install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaasgenericloan&gear_profile=medium&initial_git_url=)
 
+Once installed you can use the JBoss BPM Suite logins: 
+
+   * u:erics  p: bpmsuite  (admin)
+
+   * u: alan  p: bpmsuite  (analyst)
+
 
 Install on your machine
 -----------------------
