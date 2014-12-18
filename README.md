@@ -1,10 +1,16 @@
 JBoss BPM Suite Generic Loan Demo
 =================================
+This demo is a financial simulation for getting a long and features BPM with human task integration,
+rule integration and an example use of a signal.
 
 
-Quickstart
-----------
+Install with one click on OpenShift
+------------------------------------
+[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to  install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaas&gear_profile=medium&initial_git_url=)
 
+
+Install on your machine
+-----------------------
 1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-generic-loan-demo/archive/master.zip)
 
 2. Add products to installs directory.
