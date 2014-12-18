@@ -6,7 +6,7 @@ rule integration and an example use of a signal.
 
 Install with one click in xPaaS (bpmPaaS)
 -----------------------------------------
-[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to  install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaas&gear_profile=medium&initial_git_url=)
+[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to  install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=genericloan&gear_profile=medium&initial_git_url=)
 
 
 Install on your machine
