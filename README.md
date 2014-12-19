@@ -8,7 +8,7 @@ Install with one click in xPaaS (bpmPaaS)
 -----------------------------------------
 After clicking button, ensure `Gear` size is set to `medium`:
 
-[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to  install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaasgenericloan&gear_profile=medium&initial_git_url=)
+[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Install bpmPaaS.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaasgenericloan&gear_profile=medium&initial_git_url=)
 
 Once installed you can use the JBoss BPM Suite logins: 
 
@@ -87,7 +87,7 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
-- v1.8 - moved to JBoss Demo Central, updated windows init.bat support.
+- v1.8 - moved to JBoss Demo Central, updated windows init.bat support and one click install button.
 
 - v1.7 - JBoss BPM Suite 6.0.3 installer with generic loan demo installed.
 
