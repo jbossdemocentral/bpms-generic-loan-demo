@@ -35,9 +35,9 @@ Install on your machine
 
 5. Login to http://localhost:8080/business-central
 
-```
-  - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
-```
+    ```
+    - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
+    ```
 
 6. Generic Loan demo pre-installed as project.
 
@@ -45,9 +45,47 @@ Install on your machine
 rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
 requests just run the client jar from a command line shell. You can run the following command from the 'support' directory:
 
-```
+    ```
      java -jar jboss-generic-loan-demo-client.jar erics bpmsuite1!
-```
+    ```
+
+Docker
+-------------------------
+
+The following steps can be used to configure and run the demo in a docker container
+
+1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-generic-loan-demo/archive/master.zip)
+
+2. Add product installer to installs directory.
+
+3. Build demo image
+
+	```
+	docker build -t jbossdemocentral/bpms-generic-loan-demo .
+	```
+4. Start demo container
+
+	```
+	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/bpms-generic-loan-demo
+	```
+5. Login to http://localhost:8080/business-central  
+
+    ```
+    - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
+    ```
+
+6. Generic Loan demo pre-installed as project.
+
+7. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
+rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
+requests just run the client jar from a command line shell. You can run the following command inside your container from the '/opt/jboss/support' directory:
+
+    ```
+     java -jar jboss-generic-loan-demo-client.jar erics bpmsuite1!
+    ```
+
+Additional information can be found in the jbossdemocentral docker [developer repository](https://github.com/jbossdemocentral/docker-developer)
+
 
 Note
 ----
