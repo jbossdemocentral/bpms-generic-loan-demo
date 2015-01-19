@@ -49,8 +49,8 @@ requests just run the client jar from a command line shell. You can run the foll
      java -jar jboss-generic-loan-demo-client.jar erics bpmsuite1!
     ```
 
-Docker
--------------------------
+Optional Docker Install
+-----------------------
 
 The following steps can be used to configure and run the demo in a docker container
 
@@ -58,25 +58,27 @@ The following steps can be used to configure and run the demo in a docker contai
 
 2. Add product installer to installs directory.
 
-3. Build demo image
+3. Copy contents of support/docker directory to the project root.
+
+4. Build demo image.
 
 	```
 	docker build -t jbossdemocentral/bpms-generic-loan-demo .
 	```
-4. Start demo container
+5. Start demo container.
 
 	```
 	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/bpms-generic-loan-demo
 	```
-5. Login to http://localhost:8080/business-central  
+6. Login to http://localhost:8080/business-central  
 
     ```
     - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
     ```
 
-6. Generic Loan demo pre-installed as project.
+7. Generic Loan demo pre-installed as project.
 
-7. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
+8. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
 rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
 requests just run the client jar from a command line shell. You can run the following command inside your container from the '/opt/jboss/support' directory:
 
@@ -124,6 +126,8 @@ Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v1.9 - JBoss BPM Suite 6.0.3 with optional docker installation.
 
 - v1.8 - moved to JBoss Demo Central, updated windows init.bat support and one click install button.
 
