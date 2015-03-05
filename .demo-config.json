@@ -1,0 +1,24 @@
+{
+  "name":"JBoss BPM Suite Generic Loan Demo",
+  "summary":"This demo is a financial simulation for getting a loan and features BPM with human task integration, rule integration and use of a signal.
+
+Install options - local, OpenShift and Docker.",
+  "author":"Dan-Grigore Pupaza, Andrew Block, Alexandre Porcelli, Eric D. Schabell",
+  "categories":["brms","bpms"],
+  "level":"Easy Peasy",
+  "published":true,
+  "prerequisites":"Java 1.7",
+  "targetProduct":"JBoss BPM Suite",
+  "productVersion":"JBoss BPM Suite 6.0.0 onwards",
+  "technologies": ["JBoss BPM Suite"],
+  "links": [ 
+    { 
+      "name":"Code",
+      "url":"https://github.com/jbossdemocentral/bpms-generic-loan-demo"
+    },
+    { 
+      "name":"Install bpmPaaS",
+      "url":"https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaasgenericloan&gear_profile=medium&initial_git_url="
+    }
+  ]
+}
