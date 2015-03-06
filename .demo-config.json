@@ -1,8 +1,6 @@
 {
   "name":"JBoss BPM Suite Generic Loan Demo",
-  "summary":"This demo is a financial simulation for getting a loan and features BPM with human task integration, rule integration and use of a signal.
-
-Install options - local, OpenShift and Docker.",
+  "summary":"This demo is a financial simulation for getting a loan and features BPM with human task integration, rule integration and use of a signal. Install options - local, OpenShift and Docker.",
   "author":"Dan-Grigore Pupaza, Andrew Block, Alexandre Porcelli, Eric D. Schabell",
   "categories":["brms","bpms"],
   "level":"Easy Peasy",
