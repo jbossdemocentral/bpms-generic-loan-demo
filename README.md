@@ -109,6 +109,8 @@ The following values can be used (in process form) for testing:
  - Amount: 10010    (auto rejected if value under 10k)
  - Period (in months): 24
 
+Any user tasks have automated task reassignment back into the group should a task not complete within a minute.
+
 Note that the entire demo is running default in memory, restart server, lose your process instances, data, monitoring history.
 
 Source for demo client available in projects directory.
@@ -134,6 +136,8 @@ Supporting Articles
 Released versions
 -----------------
 See the tagged releases for the following versions of the product:
+
+- v2.0 - JBoss BPM Suite 6.0.3 with automated task reassignment.
 
 - v1.9 - JBoss BPM Suite 6.0.3 with optional docker installation.
 
