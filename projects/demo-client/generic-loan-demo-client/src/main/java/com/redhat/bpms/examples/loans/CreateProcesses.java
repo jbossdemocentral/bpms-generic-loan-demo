@@ -85,7 +85,12 @@ public class CreateProcesses
 		try
 		{
 			URL jbpmURL = new URL( applicationContext );
-			RemoteRestRuntimeFactory remoteRestSessionFactory = new RemoteRestRuntimeFactory( deploymentId, jbpmURL, userId, password );
+			RemoteRestRuntimeEngineFactory remoteRestSessionFactory = RemoteRestRuntimeEngineFactory.newBuilder()
+				.addDeploymentId(deploymentId)
+				.addUrl(jbpmURL)
+				.addUserName(userId)
+				.addPassword(password)
+				.buildFactory();
 			RuntimeEngine runtimeEngine = remoteRestSessionFactory.newRuntimeEngine();
 			return runtimeEngine;
 		}
