@@ -14,7 +14,7 @@ Option 1 - Install on your machine
 
 3. Run 'init.sh' or 'init.bat' file. When running init.bat, be sure to run the script as an Administrator
 
-4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory.
+4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.4/bin directory.
 
 5. Login to http://localhost:8080/business-central
 
