@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>bpm-example-parent</artifactId>
-    <version>1.0</version>
+    <version>6.1.0.redhat-5</version>
   </parent>
 
   <name>JBoss BPM Demo Client</name>
@@ -80,13 +80,10 @@
               <artifactSet>
                 <includes>
                   <include>org.jboss:bpm-example-parent</include>
-                  <include>org.drools:drools-core</include>
-                  <include>org.jbpm:jbpm-human-task-core</include>
-                  <include>org.jbpm:jbpm-audit</include>
-                  <include>org.kie:kie-api</include>
-                  <include>org.kie:kie-internal</include>
-                  <include>org.kie.remote:kie-services-client</include>
-                  <include>org.kie.remote:kie-services-jaxb</include>
+									<include>org.drools:*</include>
+                  <include>org.jbpm:*</include>
+                  <include>org.kie:*</include>
+                  <include>org.kie.remote:*</include>
                   <include>org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec</include>
                   <include>org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_1.1_spec</include>
                   <include>org.jboss.resteasy:jaxrs-api</include>
@@ -97,6 +94,10 @@
                   <include>org.jboss.resteasy:resteasy-jaxrs</include>
                   <include>org.apache.httpcomponents:httpclient</include>
                   <include>org.apache.httpcomponents:httpcore</include>
+                  <include>org.codehaus.jackson:jackson-mapper-asl</include>
+                  <include>org.codehaus.jackson:jackson-core-asl</include>
+                  <include>org.codehaus.jackson:jackson-jaxrs</include>
+                  <include>org.codehaus.jackson:jackson-xc</include>
                   <include>org.slf4j:slf4j-api</include>
                   <include>org.slf4j:jcl-over-slf4j</include>
                   <include>org.jboss.logmanager:jboss-logmanager</include>
@@ -115,3 +116,4 @@
   </build>
 
 </project>
+                  
