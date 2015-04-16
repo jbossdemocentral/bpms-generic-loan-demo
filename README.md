@@ -14,7 +14,7 @@ Option 1 - Install on your machine
 
 3. Run 'init.sh' or 'init.bat' file. When running init.bat, be sure to run the script as an Administrator
 
-4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory.
+4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.4/bin directory.
 
 5. Login to http://localhost:8080/business-central
 
@@ -50,6 +50,8 @@ Once installed you can use the JBoss BPM Suite logins:
    * u: ursla  p: bpmsuite (user)
 
    * u: mary   p: bpmsuite (manager)
+
+Current hosting of bpmPaaS is on JBoss BPM Suite 6.0.2 in OpenShift Online.
 
 
 Option 3 - Generate docker install
@@ -136,6 +138,8 @@ Supporting Articles
 Released versions
 -----------------
 See the tagged releases for the following versions of the product:
+
+- v2.1 - JBoss BPM Suite 6.1 with generic loan demo installed.
 
 - v2.0 - JBoss BPM Suite 6.0.3 with automated task reassignment.
 
