@@ -72,9 +72,9 @@ The following steps can be used to configure and run the demo in a docker contai
 5. Start demo container.
 
 	```
-	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/bpms-generic-loan-demo
+	docker run -it -p 8080:8080 -p 9990:9990 jbossdemocentral/bpms-generic-loan-demo
 	```
-6. Login to http://localhost:8080/business-central  
+6. Login to http://&lt;DOCKER_HOST&gt;:8080/business-central  
 
     ```
     - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
