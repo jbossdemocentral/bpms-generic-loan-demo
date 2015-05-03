@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeEngine;
-import org.kie.services.client.api.RemoteRestRuntimeFactory;
+import org.kie.services.client.api.RemoteRestRuntimeEngineFactory;
 
 public class CreateProcesses
 {
@@ -17,7 +17,7 @@ public class CreateProcesses
 		if( args.length < 2 || args.length > 4 )
 		{
 			System.out
-					.println( "Usage: java -jar jboss-genearic-demo-client.jar username password [http://localhost:8080/business-central [ro.bull.bpm.examples:loan:1.0]]" );
+				.println( "Usage: java -jar jboss-genearic-demo-client.jar username password [http://localhost:8080/business-central [ro.bull.bpm.examples:loan:1.0]]" );
 			return;
 		}
 
@@ -45,8 +45,6 @@ public class CreateProcesses
 		}
 
 		populateSamples( userId, password, applicationContext, deploymentId );
-
-		System.out.println("Successfully loaded processes into your JBoss BPM Suite Server. Check the server log to see the application log outputs.");
 	}
 
 	public static void populateSamples(String userId, String password, String applicationContext, String deploymentId)
@@ -86,11 +84,11 @@ public class CreateProcesses
 		{
 			URL jbpmURL = new URL( applicationContext );
 			RemoteRestRuntimeEngineFactory remoteRestSessionFactory = RemoteRestRuntimeEngineFactory.newBuilder()
-				.addDeploymentId(deploymentId)
-				.addUrl(jbpmURL)
-				.addUserName(userId)
-				.addPassword(password)
-				.buildFactory();
+        .addDeploymentId(deploymentId)
+        .addUrl(jbpmURL)
+        .addUserName(userId)
+        .addPassword(password)
+        .buildFactory();
 			RuntimeEngine runtimeEngine = remoteRestSessionFactory.newRuntimeEngine();
 			return runtimeEngine;
 		}
