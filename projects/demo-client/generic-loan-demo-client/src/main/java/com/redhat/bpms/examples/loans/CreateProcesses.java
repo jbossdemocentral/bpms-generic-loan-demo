@@ -76,6 +76,9 @@ public class CreateProcesses
 		// Name, age, email, income, amount, period.
 		processVariables = getProcessArgs( "Joan", 80, "joan@me.com", 1000, 2000, 12 );
 		kieSession.startProcess( "ro.bull.bpm.examples.loan.LoanApp", processVariables );
+		System.out.println();
+		System.out.println("Started process instances successfully!");
+		System.out.println();
 	}
 
 	private static RuntimeEngine getRuntimeEngine(String applicationContext, String deploymentId, String userId, String password)
