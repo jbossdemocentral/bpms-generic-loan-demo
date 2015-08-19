@@ -3,7 +3,7 @@ JBoss BPM Suite Generic Loan Demo
 This demo is a financial simulation for getting a long and features BPM with human task integration,
 rule integration and an example use of a signal.
 
-There are three options available to you for using this demo; local, OpenShift and Docker.
+There are three options available to you for using this demo; local, OpenShift and containerized.
 
 
 Option 1 - Install on your machine
@@ -54,9 +54,9 @@ Once installed you can use the JBoss BPM Suite logins:
 Current hosting of bpmPaaS is on JBoss BPM Suite 6.0.2 in OpenShift Online.
 
 
-Option 3 - Generate docker install
-----------------------------------
-The following steps can be used to configure and run the demo in a docker container
+Option 3 - Generate containerized installation
+----------------------------------------------
+The following steps can be used to configure and run the demo in a container
 
 1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-generic-loan-demo/archive/master.zip)
 
@@ -143,7 +143,7 @@ See the tagged releases for the following versions of the product:
 
 - v2.0 - JBoss BPM Suite 6.0.3 with automated task reassignment.
 
-- v1.9 - JBoss BPM Suite 6.0.3 with optional docker installation.
+- v1.9 - JBoss BPM Suite 6.0.3 with optional containerized installation.
 
 - v1.8 - moved to JBoss Demo Central, updated windows init.bat support and one click install button.
 
