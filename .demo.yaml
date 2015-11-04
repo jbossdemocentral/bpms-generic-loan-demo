@@ -1,5 +1,5 @@
 id: jbossdemocentral-bpms-generic-loan
-title: A financial simulation for getting a long and features BPM with human task integration, rule integration and an example use of a signal.
+title: JBoss BPM Suite Generic Loan Demo
 github_repo_url: https://github.com/jbossdemocentral/bpms-baggage-delivery-demo
 technologies:
   - JBoss EAP
