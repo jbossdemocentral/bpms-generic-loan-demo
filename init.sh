@@ -1,6 +1,6 @@
 #!/bin/sh 
 DEMO="Generic Loan Demo"
-AUTHORS="Dan-Grigore Pupaza, Andrew Blocki,"
+AUTHORS="Dan-Grigore Pupaza, Andrew Block,"
 AUTHORS2="Alexandre Porcelli, Eric D. Schabell"
 PROJECT="git@github.com:jbossdemocentral/bpms-generic-loan-demo.git"
 PRODUCT="JBoss BPM Suite"
