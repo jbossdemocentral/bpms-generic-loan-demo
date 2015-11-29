@@ -120,7 +120,7 @@ cp $SUPPORT_DIR/application-roles.properties $SERVER_CONF
 
 echo "  - setting up demo projects..."
 echo
-#cp -r $SUPPORT_DIR/bpm-suite-demo-niogit $SERVER_BIN/.niogit
+cp -r $SUPPORT_DIR/bpm-suite-demo-niogit $SERVER_BIN/.niogit
 
 echo "  - setting up standalone.xml configuration adjustments..."
 echo
