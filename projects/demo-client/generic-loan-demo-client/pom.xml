@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>bpm-example-parent</artifactId>
-		<version>6.3.0.Final-redhat-4</version>
+		<version>19</version>
   </parent>
 
   <name>JBoss BPM Generic Loan Client</name>
