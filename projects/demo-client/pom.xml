@@ -32,7 +32,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <version.org.kie>6.2.0.redhat-1</version.org.kie>
+    <version.org.kie>6.3.0.Final-redhat-5</version.org.kie>
   </properties>
   
   <modules>
