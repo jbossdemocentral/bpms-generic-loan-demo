@@ -12,9 +12,10 @@ SERVER_BIN=$JBOSS_HOME/bin
 SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/bpms-generic-loan
-BPMS=jboss-bpmsuite-6.1.0.GA-installer.jar
+BPMS=jboss-bpmsuite-6.2.0.GA-installer.jar
 EAP=jboss-eap-6.4.0-installer.jar
-VERSION=6.1
+EAP_PATCH=jboss-eap-6.4.4-patch.zip
+VERSION=6.2
 
 # wipe screen.
 clear 
@@ -33,7 +34,7 @@ echo "##     ####  #     #     #    ###  ##### #####   #   #####     ##"
 echo "##                                                             ##"   
 echo "##                                                             ##"   
 echo "##  brought to you by,                                         ##"   
-echo "##   ${AUTHORS}                        ##"
+echo "##   ${AUTHORS}                         ##"
 echo "##   ${AUTHORS2}                      ##"
 echo "##                                                             ##"   
 echo "##  ${PROJECT} ##"
@@ -49,6 +50,16 @@ if [ -r $SRC_DIR/$EAP ] || [ -L $SRC_DIR/$EAP ]; then
 	echo
 else
 	echo Need to download $EAP package from the Customer Portal 
+	echo and place it in the $SRC_DIR directory to proceed...
+	echo
+	exit
+fi
+
+if [ -r $SRC_DIR/$EAP_PATCH ] || [ -L $SRC_DIR/$EAP_PATCH ]; then
+	echo Product patches are present...
+	echo
+else
+	echo Need to download $EAP_PATCH package from the Customer Portal 
 	echo and place it in the $SRC_DIR directory to proceed...
 	echo
 	exit
@@ -78,19 +89,31 @@ java -jar $SRC_DIR/$EAP $SUPPORT_DIR/installation-eap -variablefile $SUPPORT_DIR
 
 if [ $? -ne 0 ]; then
 	echo
-	echo Error occurred during JBoss EAP installation!
+	echo "Error occurred during JBoss EAP installation!"
 	exit
 fi
 
+echo
+echo "Applying JBoss EAP 6.4.4 patch now..."
+echo
+$JBOSS_HOME/bin/jboss-cli.sh --command="patch apply $SRC_DIR/$EAP_PATCH"
+
+if [ $? -ne 0 ]; then
+	echo "Error occurred during JBoss EAP patching!"
+	exit
+fi
+
+echo
 echo "JBoss BPM Suite installer running now..."
 echo
 java -jar $SRC_DIR/$BPMS $SUPPORT_DIR/installation-bpms -variablefile $SUPPORT_DIR/installation-bpms.variables
 
 if [ $? -ne 0 ]; then
-	echo Error occurred during JBoss installation
+	echo "Error occurred during JBoss BPM Suite installation!"
 	exit
 fi
 
+echo
 echo "  - enabling demo accounts role setup in application-roles.properties file..."
 echo
 cp $SUPPORT_DIR/application-roles.properties $SERVER_CONF
@@ -129,7 +152,7 @@ echo "To load the BPM with a set of process instances, you can run the following
 echo "after you start JBoss BPM Suite, build and deploy the mortgage project, then you can"
 echo "use the helper jar file found in the support directory as follows:"
 echo 
-echo "   java -jar jboss-generic-loan-demo-client.jar erics bpmsuite1!" 
+echo "   java -jar $SUPPORT_DIR/jboss-generic-loan-demo-client.jar erics bpmsuite1!" 
 echo
 echo "$PRODUCT $VERSION $DEMO Setup Complete."
 echo
