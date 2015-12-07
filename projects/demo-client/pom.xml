@@ -28,11 +28,11 @@
   <name>JBoss BPM Example App parent</name>
   <artifactId>bpm-example-parent</artifactId>
   <groupId>org.jboss</groupId>
-  <version>6.1.0.GA-redhat-2</version>
+	<version>6.1.0.GA-redhat-2</version>
   <packaging>pom</packaging>
 
   <properties>
-    <version.org.kie>6.2.0.Final-redhat-4</version.org.kie>
+    <version.org.kie>6.3.0.Final-redhat-5</version.org.kie>
   </properties>
   
   <modules>
