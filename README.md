@@ -54,7 +54,15 @@ Once installed you can use the JBoss BPM Suite logins:
 Current hosting of bpmPaaS is on JBoss BPM Suite 6.0.2 in OpenShift Online.
 
 
-Option 3 - Generate containerized installation
+Option 3 - Install on Red Hat CDK OpenShift Enterprise image
+------------------------------------------------------------
+The following steps can be used to install this demo on OpenShift Enterprise using the
+Red Hat Container Development Kit (CDK)
+
+1. [App Dev Cloud with JBoss Generic Loan Demo](https://github.com/redhatdemocentral/rhcs-generic-loan-demo)
+
+
+Option 4 - Generate containerized installation
 ----------------------------------------------
 The following steps can be used to configure and run the demo in a container
 
@@ -140,6 +148,8 @@ Supporting Articles
 Released versions
 -----------------
 See the tagged releases for the following versions of the product:
+
+-v2.6 - JBoss BPM Suite 6.3.0, JBoss EAP 6.4.7 with generic loan demo installed and RH CDK on OSE Cloud install option. 
 
 - v2.5 - JBoss BPM Suite 6.3.0 on JBoss EAP 6.4.7 with generic loan demo installed.
 
