@@ -94,7 +94,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo
-echo "Applying JBoss EAP 6.4.4 patch now..."
+echo "Applying JBoss EAP patch now..."
 echo
 $JBOSS_HOME/bin/jboss-cli.sh --command="patch apply $SRC_DIR/$EAP_PATCH"
 
