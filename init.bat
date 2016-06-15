@@ -87,7 +87,7 @@ if exist %JBOSS_HOME% (
 REM Run installers.
 echo EAP installer running now...
 echo.
-call java -jar %SRC_DIR%/%EAP% %SUPPORT_DIR%\installation-eap -variablefile %SUPPORT_DIR%\installation-eap.variables
+call java -jar %SRC_DIR%\%EAP% %SUPPORT_DIR%\installation-eap -variablefile %SUPPORT_DIR%\installation-eap.variables
 
 if not "%ERRORLEVEL%" == "0" (
   echo.
@@ -96,12 +96,13 @@ if not "%ERRORLEVEL%" == "0" (
 	GOTO :EOF
 )
 
+pause
 call set NOPAUSE=true
 
 echo.
 echo Applying JBoss EAP patch now...
 echo.
-call %JBOSS_HOME%/bin/jboss-cli.bat --command="patch apply %SRC_DIR%/%EAP_PATCH% --override-all"
+call %JBOSS_HOME%\bin\jboss-cli.bat --command="patch apply %SRC_DIR%/%EAP_PATCH% --override-all"
 
 if not "%ERRORLEVEL%" == "0" (
   echo.
@@ -109,11 +110,11 @@ if not "%ERRORLEVEL%" == "0" (
 	echo.
 	GOTO :EOF
 )
-
+pause
 echo.
 echo BPM Suite installer running now...
 echo.
-call java -jar %SRC_DIR%/%BPMS% %SUPPORT_DIR%\installation-bpms -variablefile %SUPPORT_DIR%\installation-bpms.variables
+call java -jar %SRC_DIR%\%BPMS% %SUPPORT_DIR%\installation-bpms -variablefile %SUPPORT_DIR%\installation-bpms.variables
 
 if not "%ERRORLEVEL%" == "0" (
   echo.
@@ -121,7 +122,7 @@ if not "%ERRORLEVEL%" == "0" (
 	echo.
 	GOTO :EOF
 )
-
+pause
 echo - setting up demo projects...
 echo.
 
