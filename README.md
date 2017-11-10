@@ -3,12 +3,12 @@ JBoss BPM Suite Generic Loan Demo
 This demo is a financial simulation for getting a long and features BPM with human task integration,
 rule integration and an example use of a signal.
 
-There are three options available to you for using this demo; local, OpenShift and containerized.
+There are three options available to you for using this demo; local, on OpenShift and containerized.
 
 
 Option 1 - Install on your machine
 ----------------------------------
-1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-generic-loan-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/eschabell/bpms-generic-loan-demo/archive/master.zip)
 
 2. Add products to installs directory.
 
@@ -16,57 +16,25 @@ Option 1 - Install on your machine
 
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.4/bin directory.
 
-5. Login to http://localhost:8080/business-central
+Login to http://localhost:8080/business-central
 
     ```
     - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
     ```
 
-6. Generic Loan demo pre-installed as project.
 
-7. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
-rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
-requests just run the client jar from a command line shell. You can run the following command from the 'support' directory:
-
-    ```
-     java -jar jboss-generic-loan-demo-client.jar erics bpmsuite1!
-    ```
-
-
-Option 2 - Install with one click in xPaaS (bpmPaaS)
+Option 2 - Install on Red Hat OpenShift installation
 ----------------------------------------------------
-After clicking button, ensure `Gear` size is set to `medium`:
-
-[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Install bpmPaaS.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-generic-loan-demo/master/metadata/manifest.yml&name=bpmpaasgenericloan&gear_profile=medium&initial_git_url=)
-
-Once installed you can use the JBoss BPM Suite logins: 
-
-   * u:erics   p: bpmsuite  (admin)
-
-   * u: alan   p: bpmsuite  (analyst)
-
-   * u: daniel p: bpmsuite (developer)
-
-   * u: ursla  p: bpmsuite (user)
-
-   * u: mary   p: bpmsuite (manager)
-
-Current hosting of bpmPaaS is on JBoss BPM Suite 6.0.2 in OpenShift Online.
-
-
-Option 3 - Install on Red Hat CDK OpenShift Enterprise image
-------------------------------------------------------------
-The following steps can be used to install this demo on OpenShift Enterprise using the
-Red Hat Container Development Kit (CDK)
+The following steps can be used to install this demo on any OpenShift installation:
 
 1. [App Dev Cloud with JBoss Generic Loan Demo](https://github.com/redhatdemocentral/rhcs-generic-loan-demo)
 
 
-Option 4 - Generate containerized installation
+Option 3 - Generate containerized installation
 ----------------------------------------------
 The following steps can be used to configure and run the demo in a container
 
-1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-generic-loan-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/eschabell/bpms-generic-loan-demo/archive/master.zip)
 
 2. Add product installer to installs directory.
 
@@ -75,31 +43,20 @@ The following steps can be used to configure and run the demo in a container
 4. Build demo image.
 
 	```
-	docker build -t jbossdemocentral/bpms-generic-loan-demo .
+	docker build -t eschabell/bpms-generic-loan-demo .
 	```
+
 5. Start demo container.
 
 	```
-	docker run -it -p 8080:8080 -p 9990:9990 jbossdemocentral/bpms-generic-loan-demo
+	docker run -it -p 8080:8080 -p 9990:9990 eschabell/bpms-generic-loan-demo
 	```
-6. Login to http://&lt;DOCKER_HOST&gt;:8080/business-central  
+
+Login to http://DOCKER_HOST:8080/business-central  
 
     ```
     - login for admin role and Loan Officer role (u:erics / p:bpmsuite1!)
     ```
-
-7. Generic Loan demo pre-installed as project.
-
-8. You can pre-load the BPM Suite Generic Loan project with multiple pre-configured process instances, some will run through the
-rejected path, some will be waiting for you in the Loan Officer human task when you login. To inject these pre-configured
-requests, invoke the client jar by executing a command in the most recently started container by running the following command in a new command line shell. 
-
-    ```
-     docker exec -it $(docker ps -lq) java -jar support/jboss-generic-loan-demo-client.jar erics bpmsuite1!
-    ```
-
-Additional information can be found in the jbossdemocentral docker [developer repository](https://github.com/jbossdemocentral/docker-developer)
-
 
 Note
 ----
@@ -148,6 +105,8 @@ Supporting Articles
 Released versions
 -----------------
 See the tagged releases for the following versions of the product:
+
+- v2.7 - Forked back from JBoss Demo Central for updating to JBoss BPM Suite 6.4.0, JBoss EAP 7.0.0 with generic loan demo installed locally, containerized or on any OpenShift installation.
 
 - v2.6 - JBoss BPM Suite 6.3.0, JBoss EAP 6.4.7 with generic loan demo installed and RH CDK on OSE Cloud install option. 
 
@@ -198,9 +157,9 @@ See the tagged releases for the following versions of the product:
 - v0.1 - JBoss BPM Suite 6.0.0.Beta1, JBoss EAP 6.1.1, and generic loan demo installed.
 
 
-![Loan Process](https://github.com/jbossdemocentral/bpms-generic-loan-demo/blob/master/docs/demo-images/generic-loan-process.png?raw=true)
+![Loan Process](https://github.com/eschabell/bpms-generic-loan-demo/blob/master/docs/demo-images/generic-loan-process.png?raw=true)
 
-![Process & Task Dashboard](https://github.com/jbossdemocentral/bpms-generic-loan-demo/blob/master/docs/demo-images/mock-bpm-data.png?raw=true)
+![Process & Task Dashboard](https://github.com/eschabell/bpms-generic-loan-demo/blob/master/docs/demo-images/mock-bpm-data.png?raw=true)
 
 
 
